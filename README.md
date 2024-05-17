@@ -1,6 +1,8 @@
 # AWS_Snowflake_pipeline
  ## Data pipeline which interacts with AWS and snowflake using the astro SDK
 
+ ![](https://github.com/ansel9618/AWS_Snowflake_pipeline/blob/main/images/aws_s3_snowflake.png)
+
 ### First step is to create a snowflake account
 ### The following database,warehouse,schema and tbales need to be created in snowflake via a sql worksheet
 
@@ -35,6 +37,7 @@ ORDER2,CUST2,2/2/2022,200
 ORDER3,CUST3,3/3/2023,300
 
 ```
+* after creating the s3 bucket create a user role with admin policy attached and download the access key and secret key id and use it to establish connectionwith aws
 
 ### Install the asto cli by referring the doc link :->([GitHub Pages](https://docs.astronomer.io/astro/cli/get-started-cli))
 
@@ -51,7 +54,7 @@ ORDER3,CUST3,3/3/2023,300
 
 ### Dag Execution and output
 
-![](https://github.com/ansel9618/AWS_Snowflake_pipeline/blob/main/images/10.0_.png)
+![](https://github.com/ansel9618/AWS_Snowflake_pipeline/blob/main/images/22.0_.png)
 ![](https://github.com/ansel9618/AWS_Snowflake_pipeline/blob/main/images/output.png)
 
 
