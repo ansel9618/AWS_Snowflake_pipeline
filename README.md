@@ -1,8 +1,8 @@
 # AWS_Snowflake_pipeline
  ## Data pipeline which interacts with AWS and snowflake using the astro SDK
 
-* First step is to create a snowflake account
-* The following database,warehouse,schema and tbales need to be created in snowflake via a sql worksheet
+### First step is to create a snowflake account
+### The following database,warehouse,schema and tbales need to be created in snowflake via a sql worksheet
 
 ```
 CREATE DATABASE ASTRO_SDK_DB;
@@ -26,7 +26,7 @@ INSERT INTO reporting_table (CUSTOMER_ID, CUSTOMER_NAME, ORDER_ID, PURCHASE_DATE
 ('CUST4','NAME4','ORDER4','4/4/2022',400,'TYPE2');
 ```
 
-* Next would be createa  aws account ans store the below csv file in a s3 bucket
+### Next would be createa  aws account ans store the below csv file in a s3 bucket
 
 ```
 order_id,customer_id,purchase_date,amount
@@ -36,6 +36,26 @@ ORDER3,CUST3,3/3/2023,300
 
 ```
 
-* Install the asto cli by referring the doc link :->([GitHub Pages](https://docs.astronomer.io/astro/cli/get-started-cli))
+### Install the asto cli by referring the doc link :->([GitHub Pages](https://docs.astronomer.io/astro/cli/get-started-cli))
 
-* once astro env is set up create connection to snowflake and aws via airflow and test them
+### once astro env is set up create connection to snowflake and aws via airflow and test them
+![](https://github.com/ansel9618/AWS_Snowflake_pipeline/blob/main/images/7.0_%20(2).png)
+![](https://github.com/ansel9618/AWS_Snowflake_pipeline/blob/main/images/8.0_%20(2).png)
+![](https://github.com/ansel9618/AWS_Snowflake_pipeline/blob/main/images/6.0_.png)
+
+### Dag to be created
+
+![](https://github.com/ansel9618/AWS_Snowflake_pipeline/blob/main/images/10.0_.png)
+** refer code :- astro_orders_airflowcode.py
+
+
+### Dag Execution and output
+
+![](https://github.com/ansel9618/AWS_Snowflake_pipeline/blob/main/images/10.0_.png)
+![](https://github.com/ansel9618/AWS_Snowflake_pipeline/blob/main/images/output.png)
+
+
+
+
+
+  
