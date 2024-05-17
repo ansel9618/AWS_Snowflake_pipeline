@@ -35,3 +35,7 @@ ORDER2,CUST2,2/2/2022,200
 ORDER3,CUST3,3/3/2023,300
 
 ```
+
+* Install the asto cli by referring the doc link :->([GitHub Pages](https://docs.astronomer.io/astro/cli/get-started-cli))
+
+* once astro env is set up create connection to snowflake and aws via airflow and test them
